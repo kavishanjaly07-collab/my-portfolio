@@ -1,0 +1,134 @@
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'DM Sans',sans-serif;background:var(--color-background-tertiary);color:var(--color-text-primary);}
+.hero{padding:4rem 2.5rem 3rem;border-bottom:0.5px solid var(--color-border-tertiary);position:relative;overflow:hidden;}
+.hero-tag{font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--color-text-secondary);margin-bottom:1.2rem;font-weight:500;}
+.hero-name{font-family:'DM Serif Display',serif;font-size:clamp(2.8rem,7vw,4.5rem);line-height:1.05;margin-bottom:0.5rem;}
+.hero-name em{font-style:italic;color:var(--color-text-secondary);}
+.hero-title{font-size:1rem;color:var(--color-text-secondary);font-weight:300;margin-bottom:2rem;letter-spacing:0.02em;}
+.hero-contacts{display:flex;flex-wrap:wrap;gap:12px;}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:6px 14px;border:0.5px solid var(--color-border-secondary);border-radius:100px;color:var(--color-text-secondary);background:var(--color-background-primary);}
+.chip i{font-size:14px;}
+.accent-bar{width:48px;height:3px;background:#1D9E75;border-radius:2px;margin-bottom:1.5rem;}
+section{padding:2.5rem 2.5rem;}
+section+section{border-top:0.5px solid var(--color-border-tertiary);}
+.section-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--color-text-tertiary);font-weight:500;margin-bottom:1.5rem;}
+.summary-text{font-size:1rem;line-height:1.75;color:var(--color-text-secondary);font-weight:300;max-width:560px;}
+.job-row{display:grid;grid-template-columns:1fr auto;gap:1rem;align-items:start;}
+.job-title{font-family:'DM Serif Display',serif;font-size:1.25rem;margin-bottom:4px;}
+.job-company{font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:1rem;}
+.job-badge{font-size:11px;padding:4px 10px;border-radius:100px;background:var(--color-background-info);color:var(--color-text-info);font-weight:500;white-space:nowrap;align-self:start;}
+.bullets{list-style:none;padding:0;}
+.bullets li{font-size:0.875rem;color:var(--color-text-secondary);padding:5px 0;padding-left:1.2rem;position:relative;line-height:1.6;}
+.bullets li::before{content:'';position:absolute;left:0;top:12px;width:5px;height:5px;border-radius:50%;background:#1D9E75;}
+.edu-row{display:flex;align-items:center;gap:16px;}
+.edu-icon{width:42px;height:42px;border-radius:var(--border-radius-md);background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.edu-icon i{font-size:20px;color:var(--color-text-secondary);}
+.edu-name{font-weight:500;font-size:0.95rem;}
+.edu-sub{font-size:0.8rem;color:var(--color-text-secondary);margin-top:2px;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;}
+.skill-card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:14px 16px;}
+.skill-cat{font-size:11px;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-tertiary);font-weight:500;margin-bottom:10px;}
+.skill-tag{display:inline-block;font-size:12px;padding:3px 9px;border-radius:100px;background:var(--color-background-secondary);color:var(--color-text-secondary);margin:2px 2px;}
+.lang-row{display:flex;gap:10px;flex-wrap:wrap;}
+.lang-pill{padding:8px 18px;border-radius:100px;border:0.5px solid var(--color-border-secondary);font-size:13px;background:var(--color-background-primary);}
+.footer-cta{padding:2.5rem 2.5rem;background:var(--color-background-secondary);text-align:center;}
+.footer-cta p{font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:1rem;}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;border-radius:100px;border:0.5px solid var(--color-border-secondary);background:var(--color-background-primary);font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif;color:var(--color-text-primary);}
+.cta-btn:hover{background:var(--color-background-tertiary);}
+.deco-circle{position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:0.5px solid var(--color-border-tertiary);opacity:0.4;}
+.deco-circle2{position:absolute;right:-20px;top:-20px;width:120px;height:120px;border-radius:50%;border:0.5px solid var(--color-border-secondary);opacity:0.3;}
+</style>
+
+<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);">Kavishanjali's portfolio website</h2>
+
+<div class="hero">
+  <div class="deco-circle"></div>
+  <div class="deco-circle2"></div>
+  <div class="hero-tag">Portfolio — 2026</div>
+  <h1 class="hero-name">Elangeswaran<br><em>Kavishanjali</em></h1>
+  <p class="hero-title">Data Collector &nbsp;·&nbsp; Aspiring Full Stack Developer</p>
+  <div class="hero-contacts">
+    <span class="chip"><i class="ti ti-phone" aria-hidden="true"></i>0759593850</span>
+    <span class="chip"><i class="ti ti-mail" aria-hidden="true"></i>kavishanjaly07@gmail.com</span>
+    <span class="chip"><i class="ti ti-brand-linkedin" aria-hidden="true"></i>linkedin.com/in/kavishanjali</span>
+    <span class="chip"><i class="ti ti-map-pin" aria-hidden="true"></i>Amirthakaly, Batticaloa</span>
+  </div>
+</div>
+
+<section>
+  <p class="section-label">About</p>
+  <div class="accent-bar"></div>
+  <p class="summary-text">A motivated and detail-oriented professional with hands-on experience in data collection at Techno Park, Eastern University of Sri Lanka. Strong interpersonal skills with a proven ability to work effectively in team environments and take on leadership responsibilities. Passionate about technology and currently developing skills toward a career in full stack web development.</p>
+</section>
+
+<section>
+  <p class="section-label">Experience</p>
+  <div class="accent-bar"></div>
+  <div class="job-row">
+    <div>
+      <h3 class="job-title">Data Collector</h3>
+      <p class="job-company"><i class="ti ti-building" style="font-size:13px;vertical-align:-1px;margin-right:4px;" aria-hidden="true"></i>Techno Park, Eastern University of Sri Lanka</p>
+      <ul class="bullets">
+        <li>Collected, recorded and organized structured datasets with high accuracy.</li>
+        <li>Collaborated with team members to meet data collection targets on schedule.</li>
+        <li>Applied attention to detail to ensure data integrity and quality.</li>
+        <li>Demonstrated leadership by coordinating tasks within the team.</li>
+      </ul>
+    </div>
+    <span class="job-badge">Current</span>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Education</p>
+  <div class="accent-bar"></div>
+  <div class="edu-row">
+    <div class="edu-icon"><i class="ti ti-school" aria-hidden="true"></i></div>
+    <div>
+      <p class="edu-name">Eastern University of Sri Lanka</p>
+      <p class="edu-sub">Undergraduate Studies &nbsp;·&nbsp; Batticaloa</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Skills</p>
+  <div class="accent-bar"></div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <p class="skill-cat">Interpersonal</p>
+      <span class="skill-tag">Teamwork</span>
+      <span class="skill-tag">Leadership</span>
+      <span class="skill-tag">Communication</span>
+    </div>
+    <div class="skill-card">
+      <p class="skill-cat">Technical</p>
+      <span class="skill-tag">Data Collection</span>
+      <span class="skill-tag">MS Office</span>
+      <span class="skill-tag">Computer Skills</span>
+    </div>
+    <div class="skill-card">
+      <p class="skill-cat">In progress</p>
+      <span class="skill-tag">Full Stack Dev</span>
+      <span class="skill-tag">Web Development</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <p class="section-label">Languages</p>
+  <div class="accent-bar"></div>
+  <div class="lang-row">
+    <span class="lang-pill">Tamil</span>
+    <span class="lang-pill">English</span>
+    <span class="lang-pill">Sinhala</span>
+  </div>
+</section>
+
+<div class="footer-cta">
+  <p>Interested in working together?</p>
+  <button class="cta-btn" onclick="sendPrompt('Help me write a professional contact message for Kavishanjali')"><i class="ti ti-send" aria-hidden="true"></i>Get in touch ↗</button>
+</div>
